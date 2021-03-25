@@ -1,12 +1,12 @@
 {
  "name": "node-red-contrib-e131",
- "version": "1.0.1",
+ "version": "1.0.2",
  "engines": "14.15.5",
  "description": "a node red port of the e131 protocol",
  "author": "MrRosenkilde",
  "license": {
-	"type" : "ISC",
-	"url" : "https://opensource.org/licenses/ISC"
+  "type": "ISC",
+  "url": "https://opensource.org/licenses/ISC"
  },
  "keywords": [
   "node-red",
@@ -15,10 +15,10 @@
   "sacn",
   "dmx"
  ],
- "homepage" : "https://www.npmjs.com/package/node-red-contrib-e131",
- "bugs" : {
-  "url" : "https://github.com/MrRosenkilde/node-red-contrib-e131/issues",
-  "email" : "dr@amfitech.dk"
+ "homepage": "https://www.npmjs.com/package/node-red-contrib-e131",
+ "bugs": {
+  "url": "https://github.com/MrRosenkilde/node-red-contrib-e131/issues",
+  "email": "dr@amfitech.dk"
  },
  "node-red": {
   "nodes": {
