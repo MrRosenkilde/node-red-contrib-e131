@@ -1,0 +1,21 @@
+{
+ "name": "node-red-contrib-e131",
+ "version": "1.0.1",
+ "engines": "14.15.5",
+ "description": "a node red port of the e131 protocol",
+ "author": "MrRosenkilde",
+ "license": "ISC",
+ "keywords": [
+  "node-red",
+  "e131",
+  "e1.31",
+  "sacn",
+  "dmx"
+ ],
+ "node-red": {
+  "nodes": {
+   "E131": "e131_Node.js",
+   "e131-config": "e131-config.js"
+  }
+ }
+}

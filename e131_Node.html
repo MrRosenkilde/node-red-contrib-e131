@@ -1,0 +1,74 @@
+<script type="text/javascript">
+    RED.nodes.registerType(
+		'E131',
+		{
+			category: 'MyFunctions',
+			color: '#eeaa55',
+			defaults: {
+				name: {value: "" },
+                output_configuration: { value: "", type: "e131-config"}
+			},
+			//defaults: {
+			//	name: { value: "E131"},
+			//	universe: {value: 1, required: true, validate: RED.validators.typedInput('universetype')},
+			//	universe_size: { value: 1, required: true, validate: RED.validators.typedInput('universe_sizetype') },
+   //             ip: { value: "", required: true, validate: RED.validators.typedInput('iptype') },
+			//	universetype: { value: 'num' },
+			//	universe_sizetype: { value: 'num' },
+			//	iptype: {value: 'str'}
+			//},
+			inputs: 1,
+			outputs: 0,
+			icon: "light.png",
+			label: function() {
+				return this.name || "E131";
+			}
+			//,
+			//oneditprepare: function(){
+			//	$("#node-input-universe").typedInput({
+			//		types:["msg", "flow", "global", "num"],
+			//		typeField: "#node-input-universetype"
+			//	});
+				
+			//	$("#node-input-universe_size").typedInput({
+			//		types:["msg", "flow", "global", "num"],
+			//		typeField: "#node-input-universe_sizetype"
+			//	});
+
+			//	$("#node-input-ip").typedInput({
+			//		types: ["msg", "flow", "global", "str"],
+			//		typeField: "#node-input-iptype"
+			//	});
+			//}
+		}
+	);
+</script> 
+
+<script type="text/html" data-template-name="E131">
+	<div class="form-row">
+		<label for="node-input-name">Name</label>
+		<input type="text" id="node-input-name">
+	</div>
+
+	<div class="form-row">
+		<label for="node-input-output_configuration">Configuration</label>
+		<input id="node-input-output_configuration"/>
+	</div>
+
+	<!--<div class="form-row">
+		<label for="node-input-universe-size">Universe Size</label>
+		<input type="text" id="node-input-universe_size">
+		<input type="hidden" id="node-input-universe_sizetype">
+	</div>
+
+	<div class="form-row">
+		<label for="node-input-ip">Controller IP</label>
+		<input type="text" id="node-input-ip">
+		<input type="hidden" id="node-input-iptype">
+	</div>-->
+</script>
+
+<script type="text/html" data-help-name="E131">
+	<p>Outputs msg.payload as sacn packages of the specified size starting at the specified universe, to the specified ip, incrementing the universe as needed</p>
+	
+</script>
